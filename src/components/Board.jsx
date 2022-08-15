@@ -8,6 +8,10 @@ const Board = () => {
             <Square value={1} />
             <Square value={2}/>
             <Square value={3} />
+            {/* <Square>
+                <p>Hello i am Shubham</p>
+                this is mess
+            </Square> */}
         </div>
         <div>
             <Square value={4}/>
