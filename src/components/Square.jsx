@@ -1,22 +1,28 @@
-import React from 'react';
+import React from 'react'
 
-// to get values without key mentioned
-// const Square = (props) => {
-//     console.log(props);
-//   return (<button type="button">{props.children}</button>)
-// }
 
-const Square = (props) => {
-    console.log(props);
-  return (<button type="button">{props.value}</button>);
+const Square = ({value,onClick}) => {
+    // basically are props is objecct and the value which we will pass in tag in board.jsx will become keys
+
+  return (
+    <button type="button" className="square" onClick={onClick}>{value}</button>
+  )
 }
 
-// or
-// we can do destructing 
-// const Square = ({value}) => {
-//     // console.log(props);
-//   return (<button type="button">{value}</button>);
 
+
+
+// by directly using array destructering
+
+// const Square = ({value}) => {
+//     // basically are props is objecct and the value which we will pass in tag in board.jsx will become keys
+
+//     // console.log(props);
+//   return (
+//     <button type="button">{value}</button>
+//   )
 // }
+
+
 
 export default Square;
